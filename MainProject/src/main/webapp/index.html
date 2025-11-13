@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+    <div class="nav">
+        <h1 class="title">Student Management System</h1>
+    </div>
+
+    <section class="main">
+        <h2 class="main-title"> <span class="alogin">Admin Login</span> / <span class="slogin">Student Login</span></h2>
+        <div class="info-box">
+                <h2>Demo Access Information</h2>
+                <p>
+                    Welcome to the <strong>Student Management System</strong> demo.
+                    This project is for demonstration purposes only.
+                </p>
+
+                <div class="credentials">
+                    <p><strong>Username:</strong> admin</p>
+                    <p><strong>Net id:</strong> admin@net</p>
+                    <p><strong>Password:</strong> admin@pass</p>
+                </div>
+
+                <p class="note">
+                    ⚠️ Admin accounts can only be added directly through the database.
+                    Please use the above credentials to log in and explore the system.
+                </p>
+            </div>
+    <div class="info-box-std">
+    <h2>Student Demo Access</h2>
+    <p>
+      Welcome to the <strong>Student Management System</strong> demo.
+      Use the credentials below to log in as a student and explore the portal.
+    </p>
+
+    <div class="credentials-std">
+      <p><strong>Net ID:</strong> student@net</p>
+      <p><strong>Password:</strong> student@pass</p>
+    </div>
+
+    <p class="note-std">
+      ⚠️ This is a demo version. Student accounts are pre-created for testing only.
+      Please use the above details to access the student dashboard.
+    </p>
+  </div>
+
+        <main class="forms">
+            <form action="adminLogin" method="get" class="form admin">
+                <div>
+                    <label for="admin-name">Enter admin name</label>
+                    <input type="text" name="admin-name" id="i-aname">
+                    <p class="err aname">Enter valid user name</p>
+                </div>
+                <div>
+                    <label for="admin-net">Enter admin net id</label>
+                    <input type="text" name="admin-net" id="i-anet">
+                    <p class="err net">Enter valid net id</p>
+                </div>
+                <div>
+                    <label for="admin-pass">Enter Password</label>
+                    <input type="password" name="admin-pass" id="i-apass">
+                    <p class="err pass">Enter valid password</p>
+                </div>
+                <div>
+                    <input type="submit" id="a-btn" value="login as admin">
+                </div>
+            </form>
+
+            <form action="studentLogin" method="get" class="form student">
+                <div>
+                    <label for="student-net">Enter student net id</label>
+                    <input type="text" name="student-net" id="i-snet">
+                    <p class="err snet">Enter valid net id</p>
+                </div>
+                <div>
+                    <label for="student-pass">Enter Password</label>
+                    <input type="password" name="student-pass" id="i-spass">
+                    <p class="err spass">Enter valid password</p>
+                </div>
+                <div>
+                    <input type="submit" id="s-btn" value="login as student">
+                </div>
+            </form>
+        </main>
+    </section>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
